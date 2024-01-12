@@ -1,0 +1,47 @@
+/* MyBarChart.css */
+
+/* Style the overall chart container */
+.recharts-wrapper {
+  font-family: 'Arial', sans-serif;
+  user-select: none;
+}
+
+/* Style the bars in the chart */
+.recharts-bar-rectangle {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+/* Style the tooltip */
+.recharts-tooltip-wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Style the legend */
+.recharts-legend-wrapper {
+  padding: 10px;
+}
+
+/* Customize colors for the individual bars using the dataKey attribute */
+.recharts-bar-rectangle[dataKey="forcefulBrowsing"] {
+  fill: #8884d8;
+}
+
+.recharts-bar-rectangle[dataKey="sessionTamper"] {
+  fill: #82ca9d;
+}
+
+.recharts-bar-rectangle[dataKey="injectionAttacks"] {
+  fill: #ffc658;
+}
+
+.recharts-bar-rectangle[dataKey="protocolViolations"] {
+  fill: #ff8042;
+}
+
+/* ... additional styles as needed */
+
